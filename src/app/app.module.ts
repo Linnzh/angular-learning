@@ -7,6 +7,7 @@ import { GenerateAComponentComponent } from './components/demo/generate-a-compon
 import { CustomizeComponentNameComponent } from './components/demo/customize-component-name/customize-component-name.component';
 import { ServiceAndDependencyInjectionComponent } from './components/demo/service-and-dependency-injection/service-and-dependency-injection.component';
 import { AboutFormElementComponent } from './components/demo/about-form-element/about-form-element.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AboutFormElementComponent } from './components/demo/about-form-element/
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

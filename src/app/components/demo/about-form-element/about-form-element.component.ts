@@ -12,4 +12,12 @@ export class AboutFormElementComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  // submit() {
+  //   console.log('You submit the form!');
+  // }
+  
+  submit(login: any) {
+    console.log('You submit the form!', login);
+  }
+
 }

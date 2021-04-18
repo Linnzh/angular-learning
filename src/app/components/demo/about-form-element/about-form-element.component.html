@@ -1,1 +1,35 @@
-<p>about-form-element works!</p>
+<div class="container">
+  <h1>User Registration</h1>
+  <form #login="ngForm" (ngSubmit)="submit(login)">
+      <div class="form-group">
+          <label for="firstname">FirstName</label><br>
+          <!-- 通过给 input 标记 ngModel 来获取该标签的所有属性和状态 -->
+          <input #name="ngModel" required minlength="3" maxlength="12" type="text" name="firstname" class="form-control" ngModel>
+          <!-- 检测 name Model 的状态值 -->
+          <div *ngIf="name.touched && name.invalid" class="info info-danger">
+              <!-- 通过检查 ngModel 的错误属性分配不同的提示信息 -->
+              <!-- name.errors 可能为空，所以这里使用 name.errors?.* -->
+              <!-- 参考：https://stackoverflow.com/questions/45950054/angular-4-reactive-forms-formcontrol-errors-is-null -->
+              <p *ngIf="name.errors?.required">FirstName Required!</p>
+              <p *ngIf="name.errors?.minlength">The length of FirstName should be greater than 2 characters!!</p>
+          </div>
+      </div>
+      <pre></pre>
+      <div class="form-group">
+          <label for="lastname">LastName</label><br>
+          <input type="text" name="lastname" class="form-control" ngModel>
+      </div>
+      <pre></pre>
+      <div class="form-group">
+          <label for="email">Email</label><br>
+          <input type="text" name="email" class="form-control" ngModel>
+      </div>
+      <pre></pre>
+      <div class="form-group">
+          <label for="password">Password</label><br>
+          <input type="password" name="password" class="form-control" ngModel>
+      </div>
+      <pre></pre>
+      <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
