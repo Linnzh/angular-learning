@@ -57,6 +57,7 @@ ng serve
 2. [自定义组件标签名](docs/2-customize-the-component-name.md)
 3. [服务与依赖注入](docs/3-service-and-dependency-injection.md)
 4. [关于表单](docs/4-about-form-element.md)
+5. [更新服务数据](docs/5-update-service-data.md)
 
 ## Development server
 

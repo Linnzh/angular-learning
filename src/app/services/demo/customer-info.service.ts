@@ -18,7 +18,13 @@ export class CustomerInfoService {
   getInfo3(): string[] {
     return this.info3;
   }
-  
+
   constructor() { }
+
+  updateInfo(form: any) {
+    this.info1.push(form);
+    this.info2.push(form);
+    this.info3.push(form);
+  }
 
 }

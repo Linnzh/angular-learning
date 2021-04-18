@@ -1,0 +1,27 @@
+<div class="container">
+  <h3>update-service-data</h3>
+
+  <form #form="ngForm" (ngSubmit)="updateInfo(form)" class="form">
+    <div class="form">
+      <label for="extra_info">附加的信息：</label>
+      <input type="text" name="extra_info" ngModel>
+    </div>
+  </form>
+
+  <button type="button" name="button" (click)='getInfoFromServiceClass1()' class="btn btn-info">Info 1</button>
+  <ul class="list-group">
+    <li *ngFor="let info of infoReceived1" class="list-group-item">{{info}}</li>
+  </ul>
+  <pre></pre>
+  <button type="button" name="button" (click)='getInfoFromServiceClass2()' class="btn btn-info">Info 2</button>
+  <ul class="list-group">
+    <li *ngFor="let info of infoReceived2" class="list-group-item">{{info}}</li>
+  </ul>
+  <pre></pre>
+  <button type="button" name="button" (click)='getInfoFromServiceClass3()' class="btn btn-info">Info 3</button>
+  <ul class="list-group">
+    <li *ngFor="let info of infoReceived3" class="list-group-item">{{info}}</li>
+  </ul>
+  <pre></pre>
+
+</div>
