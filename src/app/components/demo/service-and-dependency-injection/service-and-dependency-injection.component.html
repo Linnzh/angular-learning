@@ -1,1 +1,19 @@
-<p>service-and-dependency-injection works!</p>
+<h3>service-and-dependency-injection</h3>
+
+<button type="button" name="button" (click)='getInfoFromServiceClass1()'>Info 1</button>
+<ul class="list-group">
+  <li *ngFor="let info of infoReceived1">{{info}}</li>
+</ul>
+<pre></pre>
+
+<button type="button" name="button" (click)='getInfoFromServiceClass2()'>Info 2</button>
+<ul class="list-group">
+  <li *ngFor="let info of infoReceived2">{{info}}</li>
+</ul>
+<pre></pre>
+
+<button type="button" name="button" (click)='getInfoFromServiceClass3()'>Info 3</button>
+<ul class="list-group">
+  <li *ngFor="let info of infoReceived3">{{info}}</li>
+</ul>
+<pre></pre>
