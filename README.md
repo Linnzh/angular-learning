@@ -54,6 +54,7 @@ ng serve
 ## Demo List
 
 1. [生成一个组件](./docs/1-generate-a-component.md)
+2. [自定义组件标签名](docs/2-customize-the-component-name.md)
 
 ## Development server
 
