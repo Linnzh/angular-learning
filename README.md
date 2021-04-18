@@ -51,6 +51,10 @@ ng serve
 # 即可看到 src/app/app.component.html 的内容
 ```
 
+## Demo List
+
+1. [生成一个组件](./docs/1-generate-a-component.md)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
