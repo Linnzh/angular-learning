@@ -55,6 +55,7 @@ ng serve
 
 1. [生成一个组件](./docs/1-generate-a-component.md)
 2. [自定义组件标签名](docs/2-customize-the-component-name.md)
+3. [服务与依赖注入](docs/3-service-and-dependency-injection.md)
 
 ## Development server
 
