@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { GenerateAComponentComponent } from './components/demo/generate-a-component/generate-a-component.component';
 import { CustomizeComponentNameComponent } from './components/demo/customize-component-name/customize-component-name.component';
 import { ServiceAndDependencyInjectionComponent } from './components/demo/service-and-dependency-injection/service-and-dependency-injection.component';
+import { AboutFormElementComponent } from './components/demo/about-form-element/about-form-element.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     GenerateAComponentComponent,
     CustomizeComponentNameComponent,
-    ServiceAndDependencyInjectionComponent
+    ServiceAndDependencyInjectionComponent,
+    AboutFormElementComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
