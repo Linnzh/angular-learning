@@ -8,6 +8,7 @@ import { CustomizeComponentNameComponent } from './components/demo/customize-com
 import { ServiceAndDependencyInjectionComponent } from './components/demo/service-and-dependency-injection/service-and-dependency-injection.component';
 import { AboutFormElementComponent } from './components/demo/about-form-element/about-form-element.component';
 import { FormsModule } from '@angular/forms';
+import { UpdateServiceDataComponent } from './components/demo/update-service-data/update-service-data.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FormsModule } from '@angular/forms';
     GenerateAComponentComponent,
     CustomizeComponentNameComponent,
     ServiceAndDependencyInjectionComponent,
-    AboutFormElementComponent
+    AboutFormElementComponent,
+    UpdateServiceDataComponent
   ],
   imports: [
     BrowserModule,
